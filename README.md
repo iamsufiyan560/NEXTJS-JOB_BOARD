@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Homepage
+
+![Homepage Screenshot](/public/1.png)
+
+# Job Board - Next.js
+
+![Next.js](https://img.shields.io/badge/Next.js-Framework-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-blue)
+![Vercel](https://img.shields.io/badge/Vercel-Deployment-blue)
+
+## Overview
+
+This is a job board application built using **Next.js**, **PostgreSQL**, **Prisma**, and **Vercel Blob**. The application allows users to post and browse job listings with a modern and intuitive interface.
+
+## Features
+
+- **Job Listings:** Users can browse available job listings.
+- **Post a Job:** Companies can post new job openings.
+- **Job Details:** Detailed view of each job listing.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+
+## Technologies Used
+
+- **Next.js:** React framework for server-side rendering and static site generation.
+- **PostgreSQL:** Relational database for storing job listings and user data.
+- **Prisma:** ORM for database interaction.
+- **Vercel Blob:** File storage for handling file uploads.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+# Install dependencies
+yarn install
 # or
+npm install
+
+# Set up the database:
+# Create a .env file in the root of the project and add your PostgreSQL connection string
+DATABASE_URL="postgresql://user:password@localhost:5432/jobboard"
+# Run Prisma migrations
+npx prisma migrate dev --name init
+#Start the development server:
 yarn dev
 # or
-pnpm dev
-# or
-bun dev
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contributing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contributions to ConnectVerse App are welcome! Feel free to submit pull requests with new features, enhancements, or bug fixes.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License. See the LICENSE file for details.
